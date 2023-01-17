@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>ML Credit Predictor</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  
+</head>
+
+<body>
+ <div class="login">
+	<h1>Credit Default Predictor</h1>
+
+     <!-- Main Input For Receiving Query to our ML -->
+    <form action="{{ url_for('predict')}}"method="post">
+      <input type="text" name="Age" placeholder="Age" required="required" />
+      <input type="text" name="Monthly_Income" placeholder="Monthly Income" required="required" />
+      <input type="text" name="Number_Dependents" placeholder="Number of Dependents" required="required" />
+      <input type="text" name="Number_Open_Credit_Lines" placeholder="Number of Open Credit Lines" required="required" />
+      <input type="text" name="Number_Real_Estate_Loans" placeholder="Number of Real Estate Loans" required="required" />
+      <input type="text" name="Revolving_Utilization_Of_Unsecured_Lines" placeholder="Revolving Utilization of Unsecured Loans" required="required" />
+      <input type="text" name="Debt_Ratio" placeholder="Debt Ratio" required="required" />
+      <input type="text" name="Times_30_Days_Late_Not_Worse" placeholder="Times 30 Days Late But Not Worse" required="required" />
+      <input type="text" name="Times_60_Days_Late_Not_Worse" placeholder="Times 60 Days Late But Not Worse" required="required" />
+      <input type="text" name="Times_90_Days_Late" placeholder="Times 90 Days Late" required="required" />
+
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+    </form>
+
+   <br>
+   {{ prediction_text }}
+
+ </div>
+
+
+</body>
+</html>

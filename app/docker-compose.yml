@@ -1,0 +1,10 @@
+version:  "3.7"
+services:
+  mlapp:
+    container_name: fp_app
+    image: joshho77/fp_app
+    ports:
+      - 8080:8080
+    build:
+      context: .
+      dockerfile: Dockerfile
