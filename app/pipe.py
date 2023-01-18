@@ -1,6 +1,5 @@
 # Import modules
 import pandas as pd
-import numpy as np
 import pickle as pkl
 from xgboost import XGBClassifier
 from sklearn.preprocessing import MinMaxScaler

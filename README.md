@@ -1,5 +1,5 @@
 ### LHL Final Project | By Josh Ho
-# **Credit Eligibility Model Using Supervised Learning**
+# **Credit Default Model Using Supervised Learning**
 
 ## **Introduction**
 Banks are large contributors to the economy, having immense monetary influence on how countries, governments, societies, and individuals’ function and develop. By providing credit to borrowers in search of a capital, borrowers are able to start businesses, purchase homes, pay for school tuition, go on dream vacations and fund other important life decisions.
